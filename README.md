@@ -10,7 +10,21 @@ those provided in the synthetic data above.
 
 ## Use
 
-Usage information can be gotten with the help command
+Check out the repo with --recursive, so that the synthetic phenopackets data will also be available:
+
+```
+git clone --recursive https://github.com/CanDIG/CanCOGen_synthetic_variant_data.git
+```
+
+Then create a virtual environment with the requirements installed:
+
+```
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+```
+
+Now usage information can be gotten with the help command
 
 ```
 ./generate_variantsets.py --help
@@ -36,7 +50,7 @@ optional arguments:
 Files in the release were generated with:
 
 ```
-./generate_variantsets.py vcfs -v var_by_chrom.tsv -p cancogen_phenopackets.json
+./generate_variantsets.py vcfs -v var_by_chrom.tsv -p cancogen_phenopackets.json vcfs
 ```
 
 Setting parameters apporpriately in [`variantset_ingest.sh`](./variantset_ingest.sh) and
