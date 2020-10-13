@@ -1,0 +1,3 @@
+[submodule "CanCOGen_synthetic_data"]
+	path = CanCOGen_synthetic_data
+	url = https://github.com/CanDIG/CanCOGen_synthetic_data
